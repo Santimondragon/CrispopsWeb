@@ -1,7 +1,6 @@
 {
   "name": "finalcrispops",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +11,16 @@
     "consolidate": "^0.15.1",
     "express": "^4.16.3",
     "handlebars": "^4.0.11",
-    "mongodb": "^3.1.0-beta4"
-  }
+    "mongodb": "^3.1.0-beta4",
+    "node": "^10.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Santimondra/FinalWebMiniGame.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Santimondra/FinalWebMiniGame/issues"
+  },
+  "homepage": "https://github.com/Santimondra/FinalWebMiniGame#readme",
+  "description": ""
 }

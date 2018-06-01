@@ -165,7 +165,7 @@ function draw() {
 			break;
 
 		case 3:
-			background(255);
+			background(34, 225, 211);
 			let contador = 0;
 
 			document.querySelectorAll('.anadir').forEach(function (button) {

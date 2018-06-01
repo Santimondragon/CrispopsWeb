@@ -146,9 +146,9 @@ function draw() {
 						<p><b>` + parseInt((white / 15) * 100) + `%</b> Chocolate Blanco</p>
 						<p><b>` + parseInt((dark / 15) * 100) + `%</b> Chocolate Oscuro</p>
 					</article>
-					<article data-id="5b10f0bda9a962d557661679">
+					<article data-id="5b111972a9a962d55766167f">
 					<span>Si deseas llevarlo, <b>¡Añadelo al carrito!</b></span>
-					<a href="/productos/5b10f0bda9a962d557661679">VER PRODUCTO</a>
+					<a href="/productos/5b111972a9a962d55766167f">VER PRODUCTO</a>
 					<button class="anadir">AÑADIR AL CARRITO</button>
 					<span>O puedes volver a jugar por uno que más te guste</span>
 					<a href="/gameOne">VOLVER A JUGAR</a>

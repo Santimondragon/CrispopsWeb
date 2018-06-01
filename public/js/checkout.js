@@ -6,7 +6,7 @@ function tamano(a, b){
 };
 
 
-fetch("http://localhost:5000/productosPorIds?ids="+arreglo+"")
+fetch("http:/crispopsweb.herokuapp.com/productosPorIds?ids="+arreglo+"")
     .then(function (res) {
         return res.json();
     })

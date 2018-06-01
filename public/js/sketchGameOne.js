@@ -15,6 +15,9 @@ let whites = [],
 	leches = [],
 	darks = [];
 
+let countID = 0;
+let id = [];
+
 let imgBackground, imgOverlay, imgVasito, imgTitulo, imgControles;
 
 function preload() {
@@ -56,9 +59,18 @@ function setup() {
 }
 
 function mousePressed() {
-	/* if (pantalla < 2) {
-		pantalla++;
-	} */
+	id.push("5b111972a9a962d55766167c");
+	id.push("5b111972a9a962d55766167d");
+	id.push("5b111972a9a962d55766167e");
+	id.push("5b111972a9a962d55766167f");
+	id.push("5b111972a9a962d557661680");
+	id.push("5b111972a9a962d557661681");
+	id.push("5b111972a9a962d557661682");
+	id.push("5b111972a9a962d557661683");
+	id.push("5b111972a9a962d557661684");
+	id.push("5b111972a9a962d557661685");
+	id.push("5b111972a9a962d557661686");
+	id.push("5b111972a9a962d557661687");
 }
 
 function draw() {
@@ -72,22 +84,22 @@ function draw() {
 				print(parseInt(mouseX), parseInt(mouseY));
 			}
 			rectMode(CORNER);
-			
+
 			noStroke();
 			fill(234, 225, 211);
 			rect(305, 364, loading, 8, 10);
-			if(loading <= 245){
+			if (loading <= 245) {
 				loading += 2;
 			} else {
 				fill(255, 144, 0);
 				rect(305, 364, 247, 8, 10);
-				if(frameCount %60 == 0){
+				if (frameCount % 60 == 0) {
 					fill(0, 100);
 				} else {
 					fill(0, 255);
 				}
-				text("Has Click para empezar...", ancho/2, 400);
-				if(mouseIsPressed){
+				text("Has Click para empezar...", ancho / 2, 400);
+				if (mouseIsPressed) {
 					pantalla = 1;
 				}
 			}
@@ -96,7 +108,7 @@ function draw() {
 
 		case 1:
 			image(imgControles, ancho / 2, alto / 2, ancho, alto);
-			if(keyIsPressed){
+			if (keyIsPressed) {
 				pantalla = 2;
 			}
 			break;

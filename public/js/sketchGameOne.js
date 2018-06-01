@@ -97,7 +97,7 @@ function draw() {
 		case 1:
 			image(imgControles, ancho / 2, alto / 2, ancho, alto);
 			if(mouseIsPressed){
-				pantalla = 1;
+				pantalla = 2;
 			}
 			break;
 		case 2:

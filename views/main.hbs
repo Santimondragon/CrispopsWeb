@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crispops Tienda</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <a href="/"><img src="/images/logoCrispops.png" alt="Logo Crispops"></a>
+    </header>
+    {{!
+    <section class="banner">
+        <img src="" alt="Foto de Banner">
+    </section>
+    --}}
+    <section class="promoBanner">
+
+        <div class="info">
+            <span>NO TE LOS PIERDAS
+                <b>¡VISITANOS YA!</b>
+            </span>
+            <h2>DESCUENTOS ESPECIALES </br> Y PAQUETES EXCLUSIVOS</h2>
+        </div>
+        <button class="irAhora">
+            <a href="/gameOne">Ir Ahora</a>
+            <img src="/images/irAhora.png" alt="→">
+        </button>
+    </section>
+
+    <section class="tienda">
+        <div class="title">
+            <h1>PRODUCTOS</h1>
+            <article class="cart">
+                <h2 class="carrito">0</h2>
+                <span>Productos</span>
+                <img src="/images/carrito.png" alt="Carrito">
+                <div class="contenido">
+                    <span>Numero de Productos:</span>
+                    <h2 class="carrito">0</h2>
+                    <div>
+                        <a href="/checkout"><button>VER CARRITO</button></a>
+                        <a href="/"><button class="vaciar">VACIAR CARRITO</button></a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <section class="content">
+            <div class="filtros">
+                <input type="text" placeholder="Buscar...">
+                <a href="/">
+                    <button class="activo">TODO</button>
+                </a>
+                <article class="filtro sabor">
+                    <div>
+                        <h2>SABOR</h2>
+                        <img src="/images/arrowDown.png" alt="Arrow">
+                    </div>
+                    <a href="/?sabor=conLeche">
+                        <button class="innactivo">DE LECHE</button>
+                    </a>
+                    <a href="/?sabor=Blanco">
+                        <button class="innactivo">BLANCO</button>
+                    </a>
+                    <a href="/?sabor=Negro">
+                        <button class="innactivo">OSCURO</button>
+                    </a>
+                    <a href="/?sabor=Mixto">
+                        <button class="innactivo">MIXTAS</button>
+                    </a>
+                </article>
+                <article class="filtro color">
+                    <div>
+                        <h2>PEDIDO MIN</h2>
+                        <img src="/images/arrowDown.png" alt="Arrow">
+                    </div>
+                    <a href="/?pedidoMinimo=6">
+                        <button class="innactivo">6</button>
+                    </a>
+                    <a href="/?pedidoMinimo=8">
+                        <button class="innactivo">8</button>
+                    </a>
+                    <a href="/?pedidoMinimo=10">
+                        <button class="innactivo">10</button>
+                    </a>
+                    <a href="/?pedidoMinimo=15">
+                        <button class="innactivo">15</button>
+                    </a>
+                </article>
+                <article class="filtro tamano">
+                    <div>
+                        <h2>TAMAÑO</h2>
+                        <img src="/images/arrowDown.png" alt="Arrow">
+                    </div>
+                    <a href="/?tamano=4oz">
+                        <button class="innactivo">4 Oz</button>
+                    </a>
+                    <a href="/?tamano=9oz">
+                        <button class="innactivo">9 Oz</button>
+                    </a>
+                    <a href="/?tamano=12oz">
+                        <button class="innactivo">12 Oz</button>
+                    </a>
+                </article>
+                <article class="filtro precio">
+                    <div>
+                        <h2>PRECIO ($)</h2>
+                        <img src="/images/arrowDown.png" alt="Arrow">
+                    </div>
+                    <a href="/?precio=1">
+                        <button class="innactivo">1</button>
+                    </a>
+                    <a href="/?precio=2">
+                        <button class="innactivo">2</button>
+                    </a>
+                    <a href="/?precio=3">
+                        <button class="innactivo">3</button>
+                    </a>
+                </article>
+            </div>
+            <div class="items">
+                {{#each productos}}
+                <article class="producto">
+                    <img src={{imagen}} alt="Imagen Producto {{tamano}}">
+                    <div class="name">
+                        <span>Crispops
+                            <b>{{tamano}}</b>
+                        </span>
+                        <h2>Chocolate {{sabor}}</h2>
+                    </div>
+                    <div class="info">
+                        <div>
+                            <span>Crispops
+                                <b>{{tamano}}</b>
+                            </span>
+                            <h2>Chocolate {{sabor}}</h2>
+                        </div>
+                        <div>
+                            <h1>${{precio}}</h1>
+                            <span class="unidades">Pedido Minimo:
+                                <b>{{pedidoMinimo}} Und</b>
+                            </span>
+                        </div>
+                        <div data-id="{{this._id}}">
+                        <a href="/productos/{{_id}}">
+                                <button class="detalles">Ver Detalles</button>
+                            </a>
+                             <button class="anadir">
+                                 <b>Añadir al Carrito</b>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                {{/each}}
+            </div>
+        </section>
+    </section>
+
+    <script src="js/cliente.js"></script>
+    <script src="js/productos.js"></script>
+
+
+</body>
+<footer></footer>
+
+</html>

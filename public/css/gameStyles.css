@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,500,500i,600,600i,700");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+p,
+a,
+button {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  margin: 0;
+  color: #28190f;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background: #eae1d3;
+}
+
+body header {
+  background: linear-gradient(115deg, #3d2614 50%, #382110 50.1%, #3d2614 70%);
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+body header a {
+  margin-top: 60px;
+  filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.5));
+}
+
+body header a img {
+  width: 200px;
+}
+
+body h1 {
+  font-size: 1.8em;
+}
+
+body h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+body p {
+  font-size: 1em;
+  margin-bottom: 4px;
+}
+
+body span {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+body canvas {
+  margin: -1px;
+  padding: 0;
+  border: solid 6px #28190f;
+  box-shadow: 0 0 50px rgba(17, 17, 17, 0.44);
+}
+
+body .titulo {
+  margin: 25px;
+  font-weight: 700;
+}
+
+body .title {
+  margin: 25px 0 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 75%;
+}
+
+body .title h1 {
+  font-size: 20px;
+}
+
+body .title .cart {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: baseline;
+  width: 150px;
+  padding: 0 15px;
+  position: relative;
+}
+
+body .title .cart img {
+  width: 25px;
+}
+
+body .title .cart h2 {
+  font-size: 20px;
+  display: inline;
+}
+
+body .title .cart span {
+  font-size: 12px;
+}
+
+body .title .cart:hover .contenido {
+  display: block;
+}
+
+body .title .cart .contenido {
+  position: absolute;
+  width: 100%;
+  padding: 15px 0;
+  margin-left: -15px;
+  top: 100;
+  z-index: 100;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  display: none;
+  transition: all .25s ease;
+}
+
+body .title .cart .contenido:hover {
+  display: flex;
+}
+
+body .title .cart .contenido span {
+  font-size: 16px;
+}
+
+body .title .cart .contenido h2 {
+  margin-top: 10px;
+  font-size: 34px;
+}
+
+body .title .cart .contenido section {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+body .title .cart .contenido section button {
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-top: 0%;
+  margin-bottom: 5px;
+  border: none;
+  width: 100%;
+  outline: none;
+  font-weight: 600;
+  padding: 8px 8px;
+  background: #eae1d3;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  transition: all .25s ease;
+}
+
+body .title .cart .contenido section button:hover {
+  background: linear-gradient(135deg, #ffdf00 0%, #ff9000 100%);
+  cursor: pointer;
+}
+
+body .view {
+  flex: 90%;
+  margin: 25px 0;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+body .view .cambio {
+  box-sizing: border-box;
+  width: 128px;
+  height: 80px;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 20px;
+  outline: none;
+  background: #fff;
+  border: solid 3px #28190f;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  transition: all 0.1s ease;
+  background-image: url(/images/juegoUnoBackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(90%);
+}
+
+body .view .cambio:hover {
+  cursor: pointer;
+  filter: brightness(100%);
+  transform: scale(1.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+body .view #juego {
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: -5px;
+  position: relative;
+}
+
+body .view #juego #atras {
+  position: absolute;
+  top: 0;
+  padding: 0px 25px 4px;
+  background: #3d2614;
+  border: solid 6px #28190f;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4em;
+  border-radius: 0 0 25px 0;
+  text-decoration: none;
+}
+
+body .view #juego #atras:hover {
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+body #results {
+  margin-top: -440px;
+  z-index: 999;
+}
+
+body #results div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body #results div article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body #results div article a, body #results div article button {
+  outline: none;
+  border: none;
+  background: #fff;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  width: 235px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(17, 17, 17, 0.4);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  transition: all 0.2s ease;
+}
+
+body #results div article a:hover, body #results div article button:hover {
+  background: linear-gradient(135deg, #ffdf00 0%, #ff9000 100%);
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(17, 17, 17, 0.5);
+}
+
+body #results div .resultado {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+footer {
+  background: #28190f;
+  width: 100%;
+  height: 120px;
+}
+/*# sourceMappingURL=gameStyles.css.map */

@@ -1,0 +1,578 @@
+@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed:300,400,500,600,700");
+a, h1, h2, h3, h4, h5, h6, p, span, li, input, button {
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  color: #28190f;
+  margin: 0;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+span, p, button, li {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.grande {
+  font-size: 40px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #eae1d3;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #eae1d3;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #eae1d3;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #28190f;
+}
+
+body header {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+body header a {
+  margin-top: 60px;
+  filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.5));
+}
+
+body header a img {
+  width: 150px;
+}
+
+body .banner {
+  width: 100%;
+  height: 68vh;
+}
+
+body .banner img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -9;
+}
+
+body .promoBanner {
+  background: linear-gradient(115deg, #3d2614 50%, #382110 50.1%, #3d2614 70%);
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.5);
+}
+
+body .promoBanner .info span {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+body .promoBanner .info h2 {
+  color: #ffdf00;
+  margin: 0;
+  font-size: 20px;
+}
+
+body .promoBanner .irAhora {
+  margin-left: -70px;
+  margin-right: 100px;
+  padding: 8px 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #28190f;
+  background: linear-gradient(135deg, #ffdf00 0%, #ff9000 100%);
+  text-align: center;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  transition: all .15s ease;
+}
+
+body .promoBanner .irAhora img {
+  width: 20px;
+  height: 14px;
+  margin-left: 10px;
+}
+
+body .promoBanner .irAhora:hover {
+  background: linear-gradient(135deg, #ffdf00 0%, #ff9000 100%);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+body .tienda {
+  width: 100%;
+  height: 1800px;
+  box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+body .tienda .title {
+  margin: 25px 0 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 75%;
+}
+
+body .tienda .title h1 {
+  font-size: 20px;
+}
+
+body .tienda .title .cart {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: baseline;
+  width: 150px;
+  padding: 0 15px;
+  position: relative;
+}
+
+body .tienda .title .cart img {
+  width: 25px;
+}
+
+body .tienda .title .cart h2 {
+  font-size: 20px;
+  display: inline;
+}
+
+body .tienda .title .cart span {
+  font-size: 12px;
+}
+
+body .tienda .title .cart:hover .contenido {
+  display: flex;
+}
+
+body .tienda .title .cart .contenido {
+  position: absolute;
+  width: 100%;
+  padding: 15px 0;
+  margin-left: -15px;
+  top: 100;
+  z-index: 100;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  display: none;
+  transition: all .25s ease;
+}
+
+body .tienda .title .cart .contenido:hover {
+  display: flex;
+}
+
+body .tienda .title .cart .contenido span {
+  font-size: 16px;
+}
+
+body .tienda .title .cart .contenido h2 {
+  margin-top: 10px;
+  font-size: 34px;
+}
+
+body .tienda .title .cart .contenido div {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+body .tienda .title .cart .contenido div button {
+  box-sizing: border-box;
+  margin-top: 0%;
+  margin-bottom: 5px;
+  border: none;
+  width: 100%;
+  outline: none;
+  font-weight: 600;
+  padding: 8px 8px;
+  background: #eae1d3;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  transition: all .25s ease;
+}
+
+body .tienda .title .cart .contenido div button:hover {
+  background: linear-gradient(135deg, #ffdf00 0%, #ff9000 100%);
+  cursor: pointer;
+}
+
+body .tienda .content {
+  width: 85%;
+  display: flex;
+  align-content: center;
+  align-items: flex-start;
+}
+
+body .tienda .content .filtros {
+  flex: 20% 0 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+body .tienda .content .filtros a {
+  width: 100%;
+}
+
+body .tienda .content .filtros input, body .tienda .content .filtros button {
+  box-sizing: border-box;
+  margin-top: 0%;
+  border: none;
+  width: 100%;
+  outline: none;
+  padding: 8px 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+body .tienda .content .filtros button {
+  padding: 8px;
+  background: white;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 8px;
+  transition: all .15s ease;
+}
+
+body .tienda .content .filtros button:hover {
+  background: linear-gradient(135deg, #ffdf00 0%, #ff9000 100%);
+  cursor: pointer;
+}
+
+body .tienda .content .filtros .activo {
+  background: linear-gradient(135deg, #ffdf00 0%, #ff9000 100%);
+}
+
+body .tienda .content .filtros article {
+  border-top: solid 1px #28190f;
+  width: 100%;
+  margin-top: 15px;
+  transition: all .25s ease;
+}
+
+body .tienda .content .filtros article div {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+body .tienda .content .filtros article div button {
+  transition: all .25s ease;
+}
+
+body .tienda .content .filtros article div img {
+  width: 18px;
+  transition: all .25s ease;
+  transform: rotate(180deg);
+}
+
+body .tienda .content .filtros article div h2 {
+  font-size: 16px;
+  margin: 10px 0 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+body .tienda .content .filtros article div:hover h2 {
+  font-weight: 700;
+}
+
+body .tienda .content .filtros .contraido button {
+  display: none;
+}
+
+body .tienda .content .filtros .contraido img {
+  transform: rotate(0deg);
+}
+
+body .tienda .content .items {
+  flex: 80% 0 0;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  border-left: 1px solid rgba(61, 38, 20, 0.2);
+}
+
+body .tienda .content .items .producto {
+  background: white;
+  box-sizing: border-box;
+  flex: 22.5% 0 0;
+  margin: 0% 0 2.5% 2.5%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: all .25s ease;
+  padding: 0;
+}
+
+body .tienda .content .items .producto img {
+  margin: 10% 20%;
+  width: 80%;
+}
+
+body .tienda .content .items .producto .name {
+  margin-bottom: 10%;
+}
+
+body .tienda .content .items .producto div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body .tienda .content .items .producto .info {
+  position: absolute;
+  opacity: 0%;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+  filter: opacity(0%);
+  transition: all .25s ease;
+}
+
+body .tienda .content .items .producto .info h1 {
+  font-size: 22px;
+}
+
+body .tienda .content .items .producto .info h2 {
+  font-size: 20px;
+}
+
+body .tienda .content .items .producto .info span {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+body .tienda .content .items .producto .info .unidades {
+  font-size: 12px;
+}
+
+body .tienda .content .items .producto .info a {
+  width: 100%;
+}
+
+body .tienda .content .items .producto .info button {
+  box-sizing: border-box;
+  margin-top: 2%;
+  border: none;
+  width: 100%;
+  outline: none;
+  padding: 8px 15px;
+  background: white;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all .25s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+body .tienda .content .items .producto .info button:hover {
+  background: linear-gradient(135deg, #ffdf00 0%, #ff9000 100%);
+  cursor: pointer;
+}
+
+body .tienda .content .items .producto:hover {
+  background: #eae1d3;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  transform: scale(1.03, 1.03);
+}
+
+body .tienda .content .items .producto:hover .info {
+  filter: opacity(100%);
+}
+
+body .tienda .content .items .producto:hover img {
+  filter: opacity(5%);
+}
+
+body .tienda .content .items .producto:hover .name {
+  filter: opacity(0%);
+}
+
+body .tienda .producto {
+  width: 70%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  padding: 20px 50px 20px 20px;
+  background: #fff;
+}
+
+body .tienda .producto .imagen {
+  box-sizing: border-box;
+  flex: 40% 0 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+body .tienda .producto .imagen img {
+  width: 220px;
+}
+
+body .tienda .producto .caracteristicas {
+  box-sizing: border-box;
+  flex: 60% 0 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  padding: 0 10px;
+}
+
+body .tienda .producto .caracteristicas h1, body .tienda .producto .caracteristicas h2, body .tienda .producto .caracteristicas h3 {
+  margin-bottom: 20px;
+}
+
+body .tienda .producto .caracteristicas h2, body .tienda .producto .caracteristicas h3 {
+  font-weight: 500;
+}
+
+body .tienda .producto .caracteristicas p {
+  width: 80%;
+  line-height: 20px;
+  text-align: justify;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+body .tienda .producto .caracteristicas div {
+  width: 250px;
+  align-self: center;
+}
+
+body .tienda .producto .caracteristicas div button {
+  box-sizing: border-box;
+  margin-top: 0%;
+  border: none;
+  width: 100%;
+  outline: none;
+  padding: 8px 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  background: #ffdf00;
+  font-weight: 600;
+  font-size: 17px;
+  transition: all .15s ease;
+}
+
+body .tienda .producto .caracteristicas div button:hover {
+  background: linear-gradient(135deg, #ffdf00 0%, #ff9000 100%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+body .lista {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+body .lista li {
+  list-style: none;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px 20px 20px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+body .lista li img {
+  margin-right: 20px;
+}
+
+body .lista li div {
+  width: 290px;
+}
+
+body .lista li div article {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+body .lista li div article h2 {
+  font-weight: 400;
+}
+
+body .lista li div h1 {
+  margin-bottom: 10px;
+}
+
+body .lista li div h2 {
+  margin-bottom: 10px;
+}
+
+body .lista li div p {
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #3d2614;
+  width: 100%;
+  height: 20vh;
+}
+/*# sourceMappingURL=main.css.map */

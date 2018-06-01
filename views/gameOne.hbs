@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+	<title>crispopsMiniGame</title>
+
+	<link rel="stylesheet" href="/css/gameStyles.css">
+	<script src="/libraries/p5.js"></script>
+	<script src="/libraries/p5.dom.js"></script>
+	<script src="/libraries/p5.sound.js"></script>
+	<script src="/js/sketchGameOne.js"></script>
+	<script src="/js/productos.js"></script>
+</head>
+
+<body>
+	<header>
+		<a href="/">
+			<img src="/images/MiniGames.png" alt="Logo Minigames">
+		</a>
+	</header>
+	<section class="title">
+		<h1>LLUVIA DE CRISPOPS</h1>
+		<article class="cart">
+			<h2 class="carrito">0</h2>
+			<span>Productos</span>
+			<img src="/images/carrito.png" alt="Carrito">
+			<section class="contenido">
+				<span>Numero de Productos:</span>
+				<h2 class="carrito">0</h2>
+				<section>
+					<a href="/checkout">
+						<button>VER CARRITO</button>
+					</a>
+					<a href="/gameOne">
+						<button class="vaciar">VACIAR CARRITO</button>
+					</a>
+				</section>
+			</section>
+		</article>
+	</section>
+	<section class="view">
+		<button id="prev" class="cambio">PREVIEWS</button>
+		<section id="juego">
+			<a href="javascript:history.back()" id="atras">←</a>
+		</section>
+		<button id="next" class="cambio">NEXT</button>
+	</section>
+	<section id="results"></section>
+	
+	<script src="/js/cliente.js"></script>
+</body>
+</html>

@@ -12,6 +12,8 @@ a,
 button {
     font-family: 'Barlow', sans-serif;
     font-size: 20px;
+    margin: 0;
+    color: #28190f;
 }
 
 body {
@@ -24,6 +26,17 @@ body {
     align-items: center;
     h1 {
         font-size: 3em;
+    }
+    h2 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 1.5em;
+        margin-bottom: 4px;
+    }
+    span {
+        margin-bottom: 10px;
     }
     canvas {
         margin: 0;
@@ -38,17 +51,34 @@ body {
         padding: -5px;
     }
     div {
-        margin-top: -250px;
+        margin-top: -620px;
         z-index: 999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .resultado {
+            margin: 25px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+        }
         a {
-            padding: 20px 70px;
+            background: #ffdf00;
+            padding: 15px 60px;
             margin-bottom: 20px;
             text-align: center;
             border-radius: 50px;
-            box-shadow: 0 4px 10px rgba(17, 17, 17, 0.4);
+            box-shadow: 0 2px 5px rgba(17, 17, 17, 0.4);
             text-decoration: none;
-            color: #000;
             font-weight: 600;
+            font-size: 1.5em;
+            transition: all 0.2s ease;
+            &:hover {
+                background: #ff9000;
+                cursor: pointer;
+                box-shadow: 0 4px 15px rgba(17, 17, 17, 0.5);
+            }
         }
     }
 }

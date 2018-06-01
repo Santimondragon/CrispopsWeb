@@ -13,10 +13,16 @@ app.set("view engine", "hbs");
 
 app.use(express.static("public")); 
 
-MongoClient.connect("mongodb://localhost:27017", (err, client) => {
+MongoClient.connect("mongodb+srv://cluster0-peai0.mongodb.net/crispops",
+{
+    auth: {
+        user: "santiagomondram",
+        password: "091917e8f83"
+    }
+}, (err, client) => {
     if(err) throw err;
     db = client.db("crispops");
-    app.listen(5000);
+    app.listen(process.env.PORT || 5000);
 });
 
 app.get("/", (req, res) => {

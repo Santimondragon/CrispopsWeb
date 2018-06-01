@@ -141,7 +141,7 @@ function draw() {
 				let btnComprar = createElement('div',
 					`<h1>¡HAS LLENADO TU VASITO!</h1>
 					<article class="resultado">
-						<h2>CRISPOPS 9oz</h2>
+						<h2>CRISPOPS MIXTO 4oz</h2>
 						<p><b>` + parseInt((leche / 15) * 100) + `%</b> Chocolate con Leche</p>
 						<p><b>` + parseInt((white / 15) * 100) + `%</b> Chocolate Blanco</p>
 						<p><b>` + parseInt((dark / 15) * 100) + `%</b> Chocolate Oscuro</p>
